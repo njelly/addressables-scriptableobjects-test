@@ -10,7 +10,7 @@ public class MessageLabelController : MonoBehaviour
     private void Start()
     {
         Label.text =
-            "This Unity projects demonstrates how ScriptableObjects may behave unexpectedly on a build vs. inside the editor. Spawning cubes will increment the count in the editor, but not on a build.\n\n"+
+            "This Unity projects demonstrates how ScriptableObjects may behave unexpectedly on a build vs. inside the editor. Spawning cubes via AssetReference will increment the count in the editor, but not on a build. Spawning via direct prefab reference will work regardless.\n\n"+
             $"Current Platform: {GetPlatformString()}";
     }
 

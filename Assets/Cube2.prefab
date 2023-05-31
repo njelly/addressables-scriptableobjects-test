@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PrefabSpawned: {fileID: 11400000, guid: 9d241e9a8611f8a488e46a7262029d6f, type: 2}
+  UnityEventPrefabSpawned: {fileID: 11400000, guid: 7e43473baea78774bba23a90daf9fcbb, type: 2}

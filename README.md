@@ -1,2 +1,2 @@
 # addressables-scriptableobjects-test
-addressables-scriptableobjects-test
+This Unity projects demonstrates how ScriptableObjects may behave unexpectedly on a build vs. inside the editor. Spawning cubes via AssetReference will increment the count in the editor, but not on a build. Spawning via direct prefab reference will work regardless.

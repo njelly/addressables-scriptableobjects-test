@@ -1,5 +1,7 @@
 # addressables-scriptableobjects-test
 
+*Note: [the ScriptableEvents package I'm using is available here](https://github.com/chark/scriptable-events), however this problem has to do with the Unity engine itself, and will affect any project using both Addressables and ScriptableObjects.*
+
 ### Here's the problem...
 
 If you're like me, you probably [read this article](https://blog.unity.com/engine-platform/6-ways-scriptableobjects-can-benefit-your-team-and-your-code) or [watched this Unite talk on architecting your Unity project using ScriptableObjects](https://youtu.be/raQ3iHhE_Kk). However there are some unintuitive ways ScriptableObjects behave on a build vs the editor, as this project sets out to demonstrate as simply and clearly as possible. In this demonstration, spawning cubes via AssetReference will increment the count in the editor, but not on a build. Spawning via direct prefab reference will work regardless. If you do not understand this nuance from the start, you might waste days of work before finally making a build and seeing that none of those ScriptableObjects you were so excited about are working!

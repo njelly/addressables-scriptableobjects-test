@@ -12,8 +12,8 @@ Lesson learned: *test your project on your target platform early and often!*
 
 In this project I have attempted to demonstrate a viable workaround. The first scene in this project is a mandatory built-in Loader scene which prompts the user to load the next scene, which is either an addressable scene or a built-in scene. Built-in scenes *will not* work as expected, and this is not fixable. However, the addressable scene ***will work*** as long as the scriptable objects in that scene are ***also addressable***.
 
-## On Build (built-in scene):
-https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/a97e04cb-9f02-419e-b1e4-4ab2e4928382
-
-## In Editor:
+## In Editor (expected behavior):
 https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/024a84d4-5a9e-4049-b9a3-8a23fac503e6
+
+## On Build (built-in scene, unexpected behavior):
+https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/a97e04cb-9f02-419e-b1e4-4ab2e4928382

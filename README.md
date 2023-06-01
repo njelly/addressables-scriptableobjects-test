@@ -19,3 +19,9 @@ https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/024
 
 ## On Build (built-in scene, unexpected behavior):
 https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/a97e04cb-9f02-419e-b1e4-4ab2e4928382
+
+## On Build (addressable scene, partially fixed!)
+The red counter references a ScriptableObject that is marked as addressable, the orange counter does not. The orange counter and the addressable prefab have separate instances of the ScriptableObject! The red counter's setup therefore demonstrates a viable workaround for using ScriptableObjects and Addressables: make sure any scene references to ScriptableObjects are also loaded alongside the addressable reference to it. Here that is acheived by marking both the Scene and the ScriptableObject as addressable.
+
+https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/c5eda300-ef7e-4da3-86a9-fd2851ad1a4a
+

@@ -4,7 +4,7 @@
 
 ### Here's the problem...
 
-If you're like me, you probably [read this article](https://blog.unity.com/engine-platform/6-ways-scriptableobjects-can-benefit-your-team-and-your-code) or [watched this Unite talk](https://youtu.be/raQ3iHhE_Kk) on architecting your Unity project using ScriptableObjects, and got excited about how you might use the patterns in your own project. However, as you develop, you will notice there are some unintuitive ways ScriptableObjects behave differently on a build than they do in the editor. This can be very discouraging, as it was for me. If you do not understand the nuance from the start, you might waste days of work before finally making a build and see that none of those ScriptableObjects you were so excited about are working!
+If you're like me, you probably [read this article](https://blog.unity.com/engine-platform/6-ways-scriptableobjects-can-benefit-your-team-and-your-code) or [watched this Unite talk](https://youtu.be/raQ3iHhE_Kk) on architecting your Unity project using ScriptableObjects, and got excited about how you might use the patterns in your own project. You also like the idea of using [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html) to control your game's memory footprint. However, as you develop, you will notice ScriptableObjects loaded via Addressables behave differently on a build than they do in the editor. This can be very discouraging, as it was for me. If you do not understand the nuance from the start, you might waste days of work before finally making a build and see that none of those ScriptableObjects you were so excited about are working!
 
 Lesson learned: *test your project on your target platform early and often!*
 

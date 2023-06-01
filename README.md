@@ -3,6 +3,8 @@ If you're like me, you probably [read this article](https://blog.unity.com/engin
 
 [Here is a good Unity forum thread on exactly this issue that discusses possible workarounds](https://forum.unity.com/threads/scriptableobject-references-in-addressables.777155/).
 
+In this project, there are 3 scenes: a built-in `Loader` scene which prompts the user to load the next scene, either via addressables or built-in. Built-in scenes will not work as expected with instantiated addressable assets. However, the addressable scene ***will work*** so long as the scriptable objects in that scene are ***also addressable***.
+
 ## On Build:
 https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/a97e04cb-9f02-419e-b1e4-4ab2e4928382
 

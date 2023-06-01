@@ -21,6 +21,14 @@ MonoBehaviour:
     m_Address: Assets/Cube.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b86572ebb5c2c48418b7b1539043cf1c
+    m_Address: Assets/Scenes/AddressableScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9d241e9a8611f8a488e46a7262029d6f
+    m_Address: Assets/SimpleScriptableEvent_Test.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e0623fb7a422d1f4a9cd7919f776bb4d, type: 2}
   m_SchemaSet:

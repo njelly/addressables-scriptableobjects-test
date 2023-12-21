@@ -10,8 +10,8 @@ Lesson learned: *test your project on your target platform early and often!*
 
 ### What's the solution?
 
-[Here is a good Unity forum thread on exactly this issue that discusses a few different workarounds.](https://forum.unity.com/threads/scriptableobject-references-in-addressables.777155/)
-[Here's another one that explains the problem very clearly.](https://forum.unity.com/threads/solved-scriptable-object-comparison-different-behaviour-in-editor-vs-build.1456882/)
+* [Here is a good Unity forum thread on exactly this issue that discusses a few different workarounds.](https://forum.unity.com/threads/scriptableobject-references-in-addressables.777155/)
+* [Here's another one that explains the problem very clearly.](https://forum.unity.com/threads/solved-scriptable-object-comparison-different-behaviour-in-editor-vs-build.1456882/)
 
 In this project I demonstrate how to use a single built in scene to load your game content, so as to avoid unexpected instances of a ScriptableObject. I feel this solution remains true to goal of ScriptableObjects (an alternative to Singletons, highly decoupled logic, obvious and designer-friendly location of the game's state and data) while retaining the usefulness of Addressables (finer control over memory, more flexibility with Scenes in relation to memory).
 

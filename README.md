@@ -35,7 +35,3 @@ https://github.com/njelly/addressables-scriptableobjects-test/assets/8916588/c5e
 The best practice when working with Addressables is to ensure that your project has exactly one built-in scene, and that scene's only job is to load (via Addressables!) the next scene that actually contains your games content. This ensures you are always working with the expected instances of your ScriptableObject assets.
 
 While developing in the editor, it is not as important to be strict on how your assets and scenes are loaded and in what order, since the editor will always reference the same instance of your ScriptableObjects. This is good news for developers working on teams, since the typical Unity workflow stays exactly the same while editing scenes and prefabs. However at build time, it is a requirement that the game loads through the initial built-in scene. Hopefully, these requirements are flexible enough for large, professional projects.
-
-## Links
-
-- 

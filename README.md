@@ -11,8 +11,9 @@ Lesson learned: *test your project on your target platform early and often!*
 ### What's the solution?
 
 [Here is a good Unity forum thread on exactly this issue that discusses a few different workarounds.](https://forum.unity.com/threads/scriptableobject-references-in-addressables.777155/)
+[Here's another one that explains the problem very clearly.](https://forum.unity.com/threads/solved-scriptable-object-comparison-different-behaviour-in-editor-vs-build.1456882/)
 
-In this project I have attempted to demonstrate one of those workarounds. I feel this solution remains true to goal of ScriptableObjects (an alternative to Singletons, highly decoupled logic, obvious and designer-friendly location of the game's state and data) while retaining the usefulness of Addressables (finer control over memory, more flexibility with Scenes in relation to memory). 
+In this project I demonstrate how to use a single built in scene to load your game content, so as to avoid unexpected instances of a ScriptableObject. I feel this solution remains true to goal of ScriptableObjects (an alternative to Singletons, highly decoupled logic, obvious and designer-friendly location of the game's state and data) while retaining the usefulness of Addressables (finer control over memory, more flexibility with Scenes in relation to memory).
 
 Running this project in Unity, you will notice spawning cubes via AssetReference will increment the count in the editor, but not on a build. Spawning via direct prefab reference will work regardless. The way I've set this up is the first scene is a mandatory built-in Loader scene which prompts the user to load the next scene, which is either addressable or a built-in. Built-in scenes will not work as expected, and this is not fixable. However, the addressable scene will work ***if and only if*** the ScriptableObjects in that scene ***are also addressable***. 
 
@@ -37,4 +38,4 @@ While developing in the editor, it is not as important to be strict on how your 
 
 ## Links
 
-- [This Unity Forums thread explains the problem very clearly.](https://forum.unity.com/threads/solved-scriptable-object-comparison-different-behaviour-in-editor-vs-build.1456882/)
+- 
